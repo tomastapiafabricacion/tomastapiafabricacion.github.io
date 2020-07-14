@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>Encargo 01</title>
-      <link>https://tomastapiafabricacion.github.io/docs/encargo-01/</link>
+      <title>Instalar Tema</title>
+      <link>https://tomastapiafabricacion.github.io/docs/instalar-tema/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://tomastapiafabricacion.github.io/docs/encargo-01/</guid>
-      <description>Planimetrías silla</description>
+      <guid>https://tomastapiafabricacion.github.io/docs/instalar-tema/</guid>
+      <description>Tutorial de intalación del tema utilizando el Framework Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Configuración</title>
+      <link>https://tomastapiafabricacion.github.io/docs/configuracion/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://tomastapiafabricacion.github.io/docs/configuracion/</guid>
+      <description>Tutorial de configuración básica del menú y otros elementos del tema.</description>
     </item>
     
     <item>
