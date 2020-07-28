@@ -167,6 +167,29 @@
 <hr>
 <h3 id="respaldo-silla-fresia">RESPALDO SILLA FRESIA</h3>
 <p><img src="/img/RESPALDO/RESPALDO-1.png" alt="Imagen Simple"></p>
+<p>Para su fabricación utilizamos un bloque de madera de 55 mm de espesor. Para el corte de éste utilizamos una fresadora con un cortador de 6mm Flat End Mill L 22.5 mm. Sin embargo como el bloque de madera tiene un espesor mucho mayor que la cortadora, debemos modificar el <strong>LENGHT BELOW HOLDER</strong> a 40 mm.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Name</th>
+<th align="center">Corner radius</th>
+<th align="center">Diameter</th>
+<th align="center">Flute length</th>
+<th align="center">Overall length</th>
+<th align="center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6 mm L22.5 mm</td>
+<td align="center">0 mm</td>
+<td align="center">6 mm</td>
+<td align="center">20 mm</td>
+<td align="center">63 mm</td>
+<td align="center">Flat End Mill</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><a href="#cara-superior">CARA SUPERIOR</a></li>
 <li><a href="#cara-inferior">CARA INFERIOR</a></li>
@@ -176,6 +199,20 @@
 </ul>
 <h3 id="cara-superior">CARA SUPERIOR</h3>
 <p><img src="/img/RESPALDO/RESPALDO-2.png" alt="Imagen Simple"></p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe generar un SKETCH en forma de rectángulo que sobrepase el contorno del respaldo, para luego en el bloque de 55 mm de espesor realizar una proyección del respaldo en la cara superior del bloque.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
+<ul>
+<li>DESBASTE ADAPTATIVO en la cara superior del bloque</li>
+</ul>
+<p>En primer lugar, debemos generar un <strong>ADAPTIVE CLEARING</strong>, el cual consiste en la remoción de material innecesario del bloque de madera para hacer más eficiente los posteriores mecanizados de corte. Para este paso se debe seleccionar como <strong>MATCHING BOUNDARY</strong>, la proyección realizada en el paso anterior señalada con una línea de color violeta, para que la fresa sólo corte en la área proyectada. Por otro lado, como no es posible desbastar tanto material al mismo tiempo, debemos configurar el <strong>OPTIMAL LOUD</strong> de la máquina a 3 mm.</p>
+<ul>
+<li>TERMINACIÓN PARALELA en la proyección del respaldo</li>
+</ul>
+<p>Ahora, debemos realizar un <strong>PARALLEL</strong> o terminación paralela en la proyección del respaldo, para que la fresa defina en el bloque la curvatura o forma del respaldo.</p>
+<ul>
+<li>TERMINACIÓN PERPENDICULAR en relación al Parallel original</li>
+</ul>
+<p>Finalmente como se realizó una terminación paralela, debemos copiar el paso anterior pero cambiarle el ángulo de dirección a 90 grados, para conseguir un mayor detalle y definición de la cara superior del respaldo.</p>
 <div>
     <video 
     width="100%" 
@@ -196,6 +233,20 @@
 
 <h3 id="cara-inferior">CARA INFERIOR</h3>
 <p><img src="/img/RESPALDO/RESPALDO-3.png" alt="Imagen Simple"></p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe generar un SKETCH en forma de rectángulo que sobrepase el contorno del respaldo, para luego en el bloque de 55 mm de espesor realizar una proyección del respaldo en la cara superior del bloque.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
+<ul>
+<li>DESBASTE ADAPTATIVO en la cara inferior del bloque</li>
+</ul>
+<p>En primer lugar, debemos generar un <strong>ADAPTIVE CLEARING</strong>, el cual consiste en la remoción de material innecesario del bloque de madera para hacer más eficiente los posteriores mecanizados de corte. Para este paso se debe seleccionar como <strong>MATCHING BOUNDARY</strong>, la proyección realizada en el paso anterior señalada con una línea de color violeta, para que la fresa sólo corte en la área proyectada. Por otro lado, como no es posible desbastar tanto material al mismo tiempo, debemos configurar el <strong>OPTIMAL LOUD</strong> de la máquina a 3 mm.</p>
+<ul>
+<li>TERMINACIÓN PARALELA en la proyección del respaldo</li>
+</ul>
+<p>Ahora, debemos realizar un <strong>PARALLEL</strong> o terminación paralela en la proyección del respaldo, para que la fresa defina en el bloque la curvatura o forma del respaldo.</p>
+<ul>
+<li>TERMINACIÓN PERPENDICULAR en relación al Parallel original</li>
+</ul>
+<p>Finalmente como se realizó una terminación paralela, debemos copiar el paso anterior pero cambiarle el ángulo de dirección a 90 grados, para conseguir un mayor detalle y definición de la cara inferior del respaldo.</p>
 <div>
     <video 
     width="100%" 
