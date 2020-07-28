@@ -91,6 +91,18 @@
   <ul>
     
     <li class="">
+      <a href="https://tomastapiafabricacion.github.io/docs/bonus-01/">Bonus 01</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tomastapiafabricacion.github.io/docs/bonus-02/">Bonus 02</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tomastapiafabricacion.github.io/docs/bonus-03/">Bonus 03</a>
+    </li>
+    
+    <li class="">
       <a href="https://tomastapiafabricacion.github.io/docs/encargo-01/">Encargo 01</a>
     </li>
     
@@ -100,14 +112,6 @@
     
     <li class="">
       <a href="https://tomastapiafabricacion.github.io/docs/encargo-03/">Encargo 03</a>
-    </li>
-    
-    <li class="">
-      <a href="https://tomastapiafabricacion.github.io/docs/encargo-04/">Encargo 04</a>
-    </li>
-    
-    <li class="">
-      <a href="https://tomastapiafabricacion.github.io/docs/encargo-05/">Encargo 05</a>
     </li>
     
     <li class="">
@@ -446,11 +450,16 @@
 
 <hr>
 <h3 id="asiento">ASIENTO</h3>
+<p>A diferencia de las demás piezas para el asiento utilizamos una plancha de terciado de 9 mm de espesor.</p>
 <p>Para su fabricación realizamos los siguientes pasos:</p>
 <ul>
-<li>2D Contour alrededor del asiento</li>
-<li>Trace sobre las lineas dibujadas sobre el asiento para poder obtener su curvatura</li>
+<li>2D CONTOUR alrededor del asiento</li>
 </ul>
+<p>Realizamos un <strong>2D CONTOUR</strong> al borde exterior del asiento con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
+<ul>
+<li>TRACE sobre las lineas dibujadas sobre el asiento para poder obtener su curvatura</li>
+</ul>
+<p>Como observaran el asiento tiene varios trazos en 2 sentidos. Éstos sirven para entregar flexibilidad a la pieza una vez cortados, por lo cual usamos la función <strong>TRACE</strong> para definir las líneas de recortes en la pieza y luego ser cortadas a la mitad del grosor de la pieza, es decir, 4.5 mm de profundidad.</p>
 <p><img src="/img/SILLA-FRESIA/PIEZA-SILLA-5.png" alt="Imagen Simple"></p>
 <div>
     <video 
