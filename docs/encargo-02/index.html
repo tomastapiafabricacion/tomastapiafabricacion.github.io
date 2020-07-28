@@ -315,7 +315,7 @@
 <hr>
 <h2 id="silla-fresia">SILLA FRESIA</h2>
 <p><img src="/img/SILLA-FRESIA/SILLA-RENDER-1.png" alt="Imagen Simple"></p>
-<p>Para su fabricación utilizamos media plancha de terciado (1200x1200 mm) de 15 mm de espesor. Para el corte de ésta utilizamos una fresadora con un cortador de 6mm Flat End Mill L 22.5 mm. Solamente para la parte del asiento se utilizo una plancha de terciado de 9 mm de espesor.</p>
+<p>Para su fabricación utilizamos media plancha de terciado (1200x1200 mm) de 15 mm de espesor. Para el corte de ésta utilizamos una fresadora con un cortador de 6mm Flat End Mill L 22.5 mm. A diferencia de las demás piezas para la parte del asiento se utilizo una plancha de terciado de 9 mm de espesor.</p>
 <table>
 <thead>
 <tr>
@@ -351,11 +351,20 @@
 </ul>
 <h3 id="patas-posteriores">PATAS POSTERIORES</h3>
 <p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar cada pieza de la silla por separado y luego distribuirlas ordenadamente a través de la plancha de terciado, alineandolas al eje y posicionandolas con sus calados hacia arriba.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
 <ul>
-<li>2D Contour a los encastres de las patas posteriores</li>
-<li>2D Pocket a los ensambles de las patas posteriores</li>
-<li>2D Contour alrededor de las patas posteriores</li>
+<li>2D CONTOUR a los encajes de las patas posteriores</li>
 </ul>
+<p>Habiendo configurado lo anterior, realizamos un <strong>2D CONTOUR</strong> a los encajes de las patas posteriores con un cortador de 6mm Flat End Mill L 22.5 mm, para lo cual seleccionamos los vectores inferiores (interiores) de cada ensamble de las patas posteriores. Un dato importante a considerar es que al estar trabajando con una plancha de 15 mm, el cortador de 6 mm no puede perforar el material de una sola pasada, arriesgando que esta se rompa o desgaste. Por lo cual en la opción <strong>MULTIPLE DEPTHS</strong>, seleccionaremos un MAXIMUN ROUGHING STEPDOWN de 3 mm para que la fresa CNC realice el corte en 5 oportunidades en vez de solo 1, asegurando la efectividad del trabajo.</p>
+<ul>
+<li>2D POCKET a las caras de los calados de las patas posteriores</li>
+</ul>
+<p>Posterior al 2D CONTOUR, realizamos un <strong>2D POCKET</strong> a las caras de los calados con DEPTHS de 3 mm para que la fresa pueda rebajar la cantidad de material innecesario de las patas posteriores.</p>
+<ul>
+<li>2D CONTOUR alrededor de las patas posteriores</li>
+</ul>
+<p>Finalmente, realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de las patas posteriores con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-FRESIA/PIEZA-SILLA-1.png" alt="Imagen Simple"></p>
 <div>
     <video 
@@ -369,11 +378,20 @@
 <hr>
 <h3 id="patas-frontales">PATAS FRONTALES</h3>
 <p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar cada pieza de la silla por separado y luego distribuirlas ordenadamente a través de la plancha de terciado, alineandolas al eje y posicionandolas con sus calados hacia arriba.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
 <ul>
-<li>2D Contour a los encastres de las patas frontales</li>
-<li>2D Pocket a los ensambles de las patas frontales</li>
-<li>2D Contour alrededor de las patas frontales</li>
+<li>2D CONTOUR a los encajes de las patas frontales</li>
 </ul>
+<p>Habiendo configurado lo anterior, realizamos un <strong>2D CONTOUR</strong> a los encajes de las patas frontales con un cortador de 6mm Flat End Mill L 22.5 mm, para lo cual seleccionamos los vectores inferiores (interiores) de cada ensamble de las patas frontales. Un dato importante a considerar es que al estar trabajando con una plancha de 15 mm, el cortador de 6 mm no puede perforar el material de una sola pasada, arriesgando que esta se rompa o desgaste. Por lo cual en la opción <strong>MULTIPLE DEPTHS</strong>, seleccionaremos un MAXIMUN ROUGHING STEPDOWN de 3 mm para que la fresa CNC realice el corte en 5 oportunidades en vez de solo 1, asegurando la efectividad del trabajo.</p>
+<ul>
+<li>2D POCKET a las caras de los calados de las patas frontales</li>
+</ul>
+<p>Posterior al 2D CONTOUR, realizamos un <strong>2D POCKET</strong> a las caras de los calados con DEPTHS de 3 mm para que la fresa pueda rebajar la cantidad de material innecesario de las patas frontales.</p>
+<ul>
+<li>2D CONTOUR alrededor de las patas frontales</li>
+</ul>
+<p>Finalmente, realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de las patas frontales con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-FRESIA/PIEZA-SILLA-2.png" alt="Imagen Simple"></p>
 <div>
     <video 
@@ -387,9 +405,12 @@
 <hr>
 <h3 id="travesaño-posterior">TRAVESAÑO POSTERIOR</h3>
 <p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar cada pieza de la silla por separado y luego distribuirlas ordenadamente a través de la plancha de terciado, alineandolas al eje y posicionandolas con sus calados hacia arriba.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
 <ul>
-<li>2D Contour alrededor de los travesaños posteriores</li>
+<li>2D CONTOUR alrededor de los travesaños posteriores</li>
 </ul>
+<p>Realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de los travesaños posteriores con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-FRESIA/PIEZA-SILLA-3.png" alt="Imagen Simple"></p>
 <div>
     <video 
@@ -403,10 +424,16 @@
 <hr>
 <h3 id="larguero">LARGUERO</h3>
 <p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar cada pieza de la silla por separado y luego distribuirlas ordenadamente a través de la plancha de terciado, alineandolas al eje y posicionandolas con sus calados hacia arriba.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
 <ul>
-<li>2D Contour a los encastres de los largueros</li>
-<li>2D Contour alrededor de los largueros</li>
+<li>2D CONTOUR a los encajes de los largueros</li>
 </ul>
+<p>Habiendo configurado lo anterior, realizamos un <strong>2D CONTOUR</strong> a los encajes de los largueros con un cortador de 6mm Flat End Mill L 22.5 mm, para lo cual seleccionamos los vectores inferiores (interiores) de cada ensamble de los largueros. Un dato importante a considerar es que al estar trabajando con una plancha de 15 mm, el cortador de 6 mm no puede perforar el material de una sola pasada, arriesgando que esta se rompa o desgaste. Por lo cual en la opción <strong>MULTIPLE DEPTHS</strong>, seleccionaremos un MAXIMUN ROUGHING STEPDOWN de 3 mm para que la fresa CNC realice el corte en 5 oportunidades en vez de solo 1, asegurando la efectividad del trabajo.</p>
+<ul>
+<li>2D CONTOUR alrededor de los largueros</li>
+</ul>
+<p>Realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de los largueros con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-FRESIA/PIEZA-SILLA-4.png" alt="Imagen Simple"></p>
 <div>
     <video 
