@@ -240,6 +240,29 @@
 </div>
 </p>
 <h3 id="infinity-chair-1">INFINITY CHAIR</h3>
+<p>Para su fabricación utilizamos una plancha de terciado (1600x1400 mm) de 15 mm de espesor. Para el corte de ésta utilizamos una fresadora con un cortador de 6mm Flat End Mill L 22.5 mm.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Name</th>
+<th align="center">Corner radius</th>
+<th align="center">Diameter</th>
+<th align="center">Flute length</th>
+<th align="center">Overall length</th>
+<th align="center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6 mm L22.5 mm</td>
+<td align="center">0 mm</td>
+<td align="center">6 mm</td>
+<td align="center">20 mm</td>
+<td align="center">63 mm</td>
+<td align="center">Flat End Mill</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><a href="#armaz%C3%B3n">ARMAZÓN</a></li>
 <li><a href="#tablones">TABLONES</a></li>
@@ -249,6 +272,21 @@
 <li><a href="#proceso-de-fabricaci%C3%B3n">PROCESO DE FABRICACIÓN</a></li>
 </ul>
 <h3 id="armazón">ARMAZÓN</h3>
+<p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar ambas piezas del armazón por separado y luego distribuirlas ordenadamente a través de la plancha de terciado y alineandolas al eje.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
+<ul>
+<li>2D CONTOUR a los encajes de los armazones</li>
+</ul>
+<p>Habiendo configurado lo anterior, realizamos un <strong>2D CONTOUR</strong> a los encajes de los armazones con un cortador de 6mm Flat End Mill L 22.5 mm, para lo cual seleccionamos los vectores inferiores (interiores) de cada ensamble de los armazones. Un dato importante a considerar es que al estar trabajando con una plancha de 15 mm, el cortador de 6 mm no puede perforar el material de una sola pasada, arriesgando que esta se rompa o desgaste. Por lo cual en la opción <strong>MULTIPLE DEPTHS</strong>, seleccionaremos un MAXIMUN ROUGHING STEPDOWN de 3 mm para que la fresa CNC realice el corte en 5 oportunidades en vez de solo 1, asegurando la efectividad del trabajo.</p>
+<ul>
+<li>2D CONTOUR a los diseños de los armazones</li>
+</ul>
+<p>Habiendo configurado lo anterior, realizamos un <strong>2D CONTOUR</strong> a los diseños de los armazones con un cortador de 6mm Flat End Mill L 22.5 mm, para lo cual seleccionamos los vectores inferiores (interiores) de cada ensamble de los armazones. Un dato importante a considerar es que al estar trabajando con una plancha de 15 mm, el cortador de 6 mm no puede perforar el material de una sola pasada, arriesgando que esta se rompa o desgaste. Por lo cual en la opción <strong>MULTIPLE DEPTHS</strong>, seleccionaremos un MAXIMUN ROUGHING STEPDOWN de 3 mm para que la fresa CNC realice el corte en 5 oportunidades en vez de solo 1, asegurando la efectividad del trabajo.</p>
+<ul>
+<li>2D CONTOUR alrededor de los armazones</li>
+</ul>
+<p>Realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de los armazones con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-INFINITY/INFINITY-1.png" alt="Imagen Simple"></p>
 <p><img src="/img/SILLA-INFINITY/INFINITY-2.png" alt="Imagen Simple"></p>
 <div>
@@ -262,6 +300,13 @@
 
 <hr>
 <h3 id="tablones">TABLONES</h3>
+<p>Para su fabricación realizamos los siguientes pasos:</p>
+<p>En primer lugar, con las herramientas de <strong>DISEÑO</strong> de FUSION 360, se debe copiar cada tablón por separado y luego distribuirlos ordenadamente a través de la plancha de terciado y alineandolos al eje.</p>
+<p>Luego, con la herramienta de <strong>MANUFACTURA</strong>  debemos indicar las instrucciones necesarias para poder simular correctamente el mecanizado, para lo cual utilizamos una fresa Autodesk CNC de 3 ejes, con lo cual definimos la orientación del corte, el sólido sobre el cual se va a trabajar y seleccionar las piezas a cortar.</p>
+<ul>
+<li>2D CONTOUR alrededor de los tablones</li>
+</ul>
+<p>Realizamos un <strong>2D CONTOUR</strong> a todo el borde exterior de los tablones con DEPTHS de 3 mm. Es importante destacar que en esta etapa se deben configurar <strong>TABS</strong> o espacios sin cortar para que cuando la máquina este cortando las piezas y las rodee por completo, la pieza no caiga de golpe evitando cortes indeseados o fracturas en el material. Los TABS deben estar situados a cierta distancia para no sobrecargar el contorno, pero si deben ser los suficientes para afirmar la pieza mientras es cortada.</p>
 <p><img src="/img/SILLA-INFINITY/INFINITY-3.png" alt="Imagen Simple"></p>
 <p><img src="/img/SILLA-INFINITY/INFINITY-4.png" alt="Imagen Simple"></p>
 <div>
