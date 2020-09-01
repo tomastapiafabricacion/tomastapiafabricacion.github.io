@@ -637,8 +637,9 @@ del plástico que se aplica a la forma y C representa el calor que libera el pro
 <h2 id="propuestas-macetero">PROPUESTAS MACETERO</h2>
 <ul>
 <li><a href="#macetero-tribal">MACETERO TRIBAL</a></li>
-<li><a href="#macetero-coc%C3%B3">MACETERO COCÓ</a></li>
+<li><a href="#macetero-ovo">MACETERO OVO</a></li>
 <li><a href="#observaciones-generales">OBSERVACIONES GENERALES</a></li>
+<li><a href="#an%C3%A1lisis-software-cura">ANÁLISIS SOFTWARE CURA</a></li>
 </ul>
 <h3 id="macetero-tribal">MACETERO TRIBAL</h3>
 <ul>
@@ -738,13 +739,14 @@ del plástico que se aplica a la forma y C representa el calor que libera el pro
     </iframe>    
 </div>
 
-<h3 id="macetero-cocó">MACETERO COCÓ</h3>
+<h3 id="macetero-ovo">MACETERO OVO</h3>
 <ul>
 <li><a href="#planimetr%C3%ADas-propuesta-2">PLANIMETRÍAS PROPUESTA 2</a></li>
 <li><a href="#renders-propuesta-2">RENDERS PROPUESTA 2</a></li>
 <li><a href="#modelado-3d-propuesta-2">MODELADO 3D PROPUESTA 2</a></li>
 </ul>
 <p><strong>CONCEPTO</strong></p>
+<p>El macetero se explica por los materiales que lo componen. La experimentación que realizamos fue con clara de huevo y yerba mate, entre otras. Estos ayudaron a inspirar la forma y la geometría del recipiente.</p>
 <h3 id="planimetrías-propuesta-2">PLANIMETRÍAS PROPUESTA 2</h3>
 <p><img src="/img/MACETERO-GRUPAL/PLANI-1.png" alt="Imagen Simple"></p>
 <p><img src="/img/MACETERO-GRUPAL/PLANI-2.png" alt="Imagen Simple"></p>
@@ -833,6 +835,48 @@ del plástico que se aplica a la forma y C representa el calor que libera el pro
 </div>
 
 <h3 id="observaciones-generales">OBSERVACIONES GENERALES</h3>
+<ul>
+<li>
+<p>Debido al diseño de la propuesta 1 no es posible la realización de éste, producto que los sacados que tiene el diseño no permite desmoldarlo del molde 3D, por tanto descartamos éste modelo.</p>
+</li>
+<li>
+<p>Para la propuesta 2 creamos una forma distinta, pero con el mismo concepto de &ldquo;sacados&rdquo;, sin embargo, en éste modelo no habrá problema debido que se diseño de tal forma que al desmoldarlo no hubiese problema con el molde.</p>
+</li>
+</ul>
+<h3 id="análisis-software-cura">ANÁLISIS SOFTWARE CURA</h3>
+<p><img src="/img/MACETERO-GRUPAL/ULTIMAKER.jpg" alt="Imagen Simple"></p>
+<p><strong>SOFTWARE CURA</strong></p>
+<p>Es una aplicación diseñada para impresoras 3D, en la que se pueden modificar los parámetros de impresión y después transformarlos a código G. Fue creada por David Braan, que después de un tiempo trabajaría para Ultimaker, una empresa dedicada al diseño y fabricación de impresoras 3D.</p>
+<p>El funcionamiento de Ultimaker Cura es dividir el archivo del modelo de un usuario en varias capas, generando un código G para la impresora 3D. Cuando ya se haya finalizado el proceso, el código G se envía a la impresora por medio de un dispositivo de almacenamiento o vinculando la impresora con el software por medio de una conexión, para que después la impresora fabrique el objeto físico.</p>
+<p>Este software de código abierto es compatible con la mayoría de las impresoras 3D de escritorio que puedan trabajar con archivos en formatos de 3D más comunes como STL, OBJ, X3D, 3MF, entre otros. También pueden trabajar formatos de imagen como BMP, GIF, JPG y PNG.</p>
+<p><em>Fuente: wwww.ultimaker.com</em></p>
+<h3 id="proceso-de-análisis">PROCESO DE ANÁLISIS</h3>
+<p><strong>CONFIGURAR LA IMPRESORA</strong></p>
+<p>Arriba a la izquierda donde sale el nombre de una impresora, ponemos add printer, add a non-networked printer (que no está conectada a la red, va a trabajar off line), creallity3D, Creallity Ender 3, add. El cual deriva a Machine Settings, en la parte de la derecha extruder 1, compatible material diameter, 1.75 mm y en la parte de la izquierda (printer) dejamos las configuraciones tal cual vienen por defecto, le damos a next.</p>
+<p><strong>DETERMINAR MATERIAL Y CONFIGURAR CABEZAL</strong></p>
+<p>Al lado derecho de dónde seleccionamos la impresora. En material vamos a PLA, eSUN, PLA+, Purple PLA+. Por otra parte en Nozzie Size (que es el diámetro por el cual sale el plástico de la impresora), debe ser 0.4 mm.</p>
+<p><strong>EXPORTAR ARCHIVO DESDE FUSION 360</strong></p>
+<p>Vamos al programa FusIon 360 y exportamos cada pieza en formato stl para poder importarla en CURA. Esto se hace selecionando cada pieza, vamos a Tools, Make (con este comando me crea una malla de mi objeto), refinement lo dejamos en High y le damos ok.</p>
+<p><strong>EN EL SOFTWARE CURA</strong></p>
+<p>Vamos a CURA y abro mis archivos, aquí vemos la cama de trabajo, que es el área de impresión. A un lado izquierdo se muestran las medidas, un botón para mover, rotar y escalar la figura.</p>
+<p><strong>PRESSETS</strong></p>
+<p>Ahora voy a desplegar los pressets arriba a la derecha el cual dice Not supported dónde me entrega una posibilidad de impresión rápida.</p>
+<ul>
+<li>
+<p>En primer lugar lo que hacemos acá es cambiar en Quality, el Layer Height a 0.32 mm.</p>
+</li>
+<li>
+<p>En segundo lugar vamos al Infill y ahí disminuimos la densidad de esto, le damos Infill density 6. El resto lo dejamos tal cual como viene predeterminado.</p>
+</li>
+<li>
+<p>Luego abajo de esto seleccionamos el botón que dice Slice que básicamente genera una serie de capas que conforman el modelo, está recortando o haciendo slices de manera horizontal, paralela a la cama. Si lo vemos por arriba me deja 2 líneas de perímetro exteriores e Interiores. Abajo a la derecha me estima el tiempo que se va a demorar y la cantidad de material que vamos a usar.</p>
+</li>
+<li>
+<p>En Prepare podemos mover la pieza y en Preview se puede ver una simulación.</p>
+</li>
+</ul>
+<h3 id="análisis-propuesta-macetero-ovo">ANÁLISIS PROPUESTA MACETERO OVO</h3>
+<p>A través del análisis del software CURA, definimos el tipo de filamento a utilizar, las distintas medidas, grosores, entre otros aspectos técnicos. Respecto al tiempo de impresión el programa determinó que el tiempo de impresión para el molde y contramolde es de 20 horas y 1 minuto. Así mismo determino que el peso total de nuestro molde y contramolde es de 286 gramos y utilizará 95.85 metros de filamento plástico.</p>
 <p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
